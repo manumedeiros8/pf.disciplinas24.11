@@ -1,0 +1,368 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FAF9F6;
+    color: #3E2A26;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background: #F4E7D8;
+    min-height: 85px;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FAF9F6;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+.logo span {
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+nav a {
+    color: #FAF9F6;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #B08D57;
+}
+
+nav .ativo {
+    color: #B08D57;
+    border-bottom: 2px solid #B08D57;
+    padding-bottom: 6px;
+}
+
+
+/* APRESENTAÇÃO */
+
+.introducao {
+    text-align: center;
+    padding: 65px 20px 45px;
+}
+
+.subtitulo {
+    color: #B08D57;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.introducao h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #6D1F2A;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.introducao p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.linha {
+    width: 55px;
+    height: 3px;
+    background: #B08D57;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+
+/* CARDS */
+
+.disciplinas {
+    max-width: 1150px;
+    margin: 10px auto 75px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #3E2A2615;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px #3E2A2620;
+}
+
+
+/* IMAGENS */
+
+.imagem {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.imagem span {
+    font-size: 75px;
+    transition: 0.3s;
+}
+
+.card:hover .imagem span {
+    transform: scale(1.15);
+}
+
+.imagem small {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.imagem-sociologia {
+    background: linear-gradient(135deg, #6D1F2A, #A75D61);
+}
+
+.imagem-geografia {
+    background: linear-gradient(135deg, #6D1F2A, #A75D61);
+}
+
+
+/* CONTEÚDO */
+
+.sociologia {
+    background: #F4E7D8;
+    border-bottom: 5px solid #6D1F2A;
+}
+
+.geografia {
+    background: #E7EDF5;
+    border-bottom: 5px solid #6D1F2A;
+}
+
+.conteudo {
+    padding: 28px;
+}
+
+.numero {
+    color: #B08D57;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.conteudo h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    margin: 13px 0;
+}
+
+.sociologia h2 {
+    color: #6D1F2A;
+}
+
+.geografia h2 {
+    color: #6D1F2A;
+}
+
+.conteudo p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-sociologia {
+    background: #6D1F2A;
+}
+
+.botao-geografia {
+    background: #6D1F2A;
+}
+
+.botao-sociologia:hover {
+    background: #B08D57;
+    transform: translateX(5px);
+}
+
+.botao-geografia:hover {
+    background: #6A4C93;
+    transform: translateX(5px);
+}
+
+
+/* SEÇÃO COMPLEMENTAR */
+
+.complementar {
+    background: #F4E7D8;
+    text-align: center;
+    padding: 65px 6%;
+}
+
+.complementar h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #6D1F2A;
+    font-size: 28px;
+    margin: 12px 0;
+}
+
+.complementar > p {
+    font-size: 14px;
+}
+
+.recursos {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.recurso {
+    background: #FAF9F6;
+    border-radius: 15px;
+    padding: 30px 20px;
+    transition: 0.3s;
+}
+
+.recurso:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px #3E2A2615;
+}
+
+.recurso span {
+    font-size: 35px;
+    color: #B08D57;
+}
+
+.recurso h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #6D1F2A;
+    font-size: 16px;
+    margin: 15px 0 10px;
+}
+
+.recurso p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #3E2A26;
+    color: #FAF9F6;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #DDC9B4;
+    font-size: 13px;
+}
+
+.links-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.links-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.links-footer a:hover {
+    color: #B08D57;
+}
+
+footer small {
+    color: #DDC9B4;
+    font-size: 11px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .introducao h1 {
+        font-size: 27px;
+    }
+
+    .disciplinas {
+        grid-template-columns: 1fr;
+    }
+
+    .recursos {
+        grid-template-columns: 1fr;
+    }
+}
